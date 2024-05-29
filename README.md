@@ -1,4 +1,4 @@
-# AMP_prediction
+# AMP prediction
 This model is designed to predict new AMP from bacterial sORF.   
 The input peptide sequence for the model must be between 5 and 40 amino acids in length.   
 The scripts used for all predictions are available in the [prediction_script](https://github.com/FAFFASS/AMP_prediction/tree/main/prediction_script).   
