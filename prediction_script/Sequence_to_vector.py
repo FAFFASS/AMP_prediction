@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import sys
+from sys import argv
 
-# usage：python formal-F.py input.fa P/N/none output.vec
+# usage：python Sequence_to_vector.py input.fa P/N/none output.vec
 # P:AMP
 # N:Non_AMP
 # none:Predictive_sequence
@@ -29,9 +29,9 @@ def convert_sequence(sequence):
     return ",".join(converted_seq)
 
 def main():
-    input_file = sys.argv[1]
-    mode = sys.argv[2]
-    output_file = sys.argv[3]
+    input_file = argv[1]
+    mode = argv[2]
+    output_file = argv[3]
     output = []    
     
     with open(input_file, 'r') as f:
